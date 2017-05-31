@@ -1,0 +1,16 @@
+<div class=""><h5 class="page-header">
+    Posts With Grid <img ng-if="home.showLoader" src="app/images/login_loader_icon.gif" style="height: 30px" /></h5> </div>
+
+<div ui-grid="home.gridOptions" ui-grid-pagination class="grid table table-bordered" id="tableData">
+
+</div>
+<br>
+<div align="center">
+    <p>Current page: {{ home.gridApi.pagination.getPage() }} of {{ home.gridApi.pagination.getTotalPages() }}</p>
+    <button type="button" id="paginationButtons" class="btn btn-success" ng-click="home.gridApi.pagination.previousPage()">
+    Prev
+  </button>
+    <button type="button" class="btn btn-success" id="paginationButtons" ng-click="home.gridApi.pagination.nextPage()">
+    Next 
+  </button>
+</div>
