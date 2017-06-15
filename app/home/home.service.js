@@ -8,7 +8,7 @@
 
         myService.getPosts = function() {
 
-            return   $http.get('http://jsonplaceholder.typicode.com/posts');
+            return   $http.get('https://jsonplaceholder.typicode.com/posts');
         };
        
 
