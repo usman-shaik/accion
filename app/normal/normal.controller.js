@@ -39,7 +39,7 @@
            normal.gridApi = gridApi;
         };
         normal.showLoader=true;
-        $http.get('http://jsonplaceholder.typicode.com/posts')
+        $http.get('https://jsonplaceholder.typicode.com/posts')
             .then(function(response) {
             	normal.showLoader=false;
             	//$scope.result=response.data;
